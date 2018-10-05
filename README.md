@@ -1,5 +1,5 @@
 # Project Name
-Memory Card Game by Jessy
+Poo JS by Jessy
 
 ## Contributing
 1. Fork it!
@@ -10,7 +10,7 @@ Memory Card Game by Jessy
 
 ## Restriction
 
-Nous devons créer un jeux de mémoire en cartes avec javascript et le DOM
+We have to create a js script poo for learn how to use it.
 
 ## Creators
 
