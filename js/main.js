@@ -21,7 +21,9 @@ function homme(prenom, nom, habitations, ages, payements) {
   var surname = prompt("Quel est votre nom ?");
   this.nom = surname;
   var lives = prompt("Dans quel pays résidez vous ?");
-  this.habitations = ["France", "Angleterre"];
+  var upperlives = lives;
+  upperlives.toUpperCase();
+  this.habitations = ["FRANCE", "ANGLETERRE"];
   var agess = prompt("Quel âge avez vous ?");
   this.ages = agess;
   var payement = prompt("Choisisez un moyen de payement (visa, mastercard)");
@@ -29,7 +31,7 @@ function homme(prenom, nom, habitations, ages, payements) {
   this.getName = function() {
     var calculage = 2018 - this.ages;
     for (i = 0; i < this.habitations.length; i++) {
-      if (lives == this.habitations[i]) {
+      if (upperlives == this.habitations[i]) {
         break;
       } else {
         continue;
@@ -43,7 +45,7 @@ function homme(prenom, nom, habitations, ages, payements) {
       }
     }
 
-    if (this.habitations[i] == undefined || this.payements[e] == undefined || this.prenom == "" || this.nom == "" || calculage < 1998) {
+    if (this.habitations[i] == undefined || this.payements[e] == undefined || this.prenom == "" || this.nom == "" || calculage > 2000) {
       alert("Il s'emblerait qu'une ou plusieurs de vos informations ne soit pas correctes.")
     }else{
       alert("Vous vous appelez: " + this.prenom + " " + this.nom + ". Vous êtes née en: " + calculage + ". Vous habitez en: " + this.habitations[i] + ". Et votre moyen de payement est: " + this.payements[e]);
